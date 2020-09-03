@@ -1,0 +1,51 @@
+// Desenvolva uma classe Autor, que contenha:
+
+// • Atributos
+// – privado nome (String)
+// – privado email (String)
+// – privado idade (int)
+
+// • Métodos
+// – Construtor com os atributos nome, email e idade
+// – Método toString()
+// – Todos os sets e gets e as seguintes verificações:
+// ∗ Idade não pode ser menor que 0;
+
+// 2. Desenvolva uma classe Livro, que contenha:
+// • Atributos
+// – privado título (String)
+// – privado autor
+// ∗ Autor será uma composição, ou seja um livro tem um autor.
+// – privado número de páginas (int)
+// – privado preço (Double)
+// – privado tiragem (int)
+// – privado classificação (char)
+// ∗ ’L’ = Livre;
+// ∗ ’0’ = Não recomendado para menores de 10 anos;
+// ∗ ’2’ = Não recomendado para menores de 12 anos;
+// ∗ ’4’ = Não recomendado para menores de 14 anos;
+// ∗ ’6’ = Não recomendado para menores de 16 anos;
+// ∗ ’8’ = Não recomendado para menores de 18 anos;
+// – privado nota (double)
+// ∗ Média das avaliações do livro de 0 a 10 com 1 casa decimal.
+// • Métodos
+// – Construtor com o titulo, autor, número de páginas, preço, tiragem, classificação
+// e nota
+// – Método toString()
+// – Todos os sets e gets e as seguintes verificações:
+
+// Aula prática B01A08 21 de agosto de 2020
+
+// ∗ Número de páginas e tiragem não pode ser menor ou igual a 0;
+// ∗ preço não pode ser menor que zero;
+// ∗ a classificação somente pode ter os valores ’L’, ’0’, ’2’,’4’, ’6’ ou ’8’.
+// ∗ nota deve ser entre 0 e 10;
+// 3. Criar uma classe com um método main:
+// • Criar um vetor com capacidade de 5 livros;
+// • Criar 5 livros e adicionar ao vetor
+// 4. Desafio: Alterar a classe livro para permitir mais de 1 autor, ou seja um livros tem 1
+// ou mais autores.
+// • Adicionar um método chamado addAutor, que adiciona um objeto to tipo Autor
+// ao vetor de autores. Pode considerar que um livro nunca terá mais de 5 autores.
+// • Adicionar um método chamado removeAutor, que remove um Autor do vetor de
+// autores. Utilizar o nome como chave de busca.
