@@ -1,4 +1,14 @@
+//================================================================
 
+// Sumário
+// 1. Classe Aluno que extende a classe Usuario
+// 2. Construtor 
+// 3. Setters 
+// 4. Getters
+// 5. Login
+// 6. toString
+
+//===================================================================
 
 public class Aluno extends Usuario{
     private String RA;
@@ -23,7 +33,7 @@ public class Aluno extends Usuario{
         return curso;
     }
 
-    public void setPassword(String password) {
+    void login(String password) {
         if (password == this.password) {
             this.password = password;
             System.out.println("Usuário logado no Acadêmico Online");

@@ -55,16 +55,19 @@ Métodos:
 logado no Acadêmico Online"
 • Reescrever o método toString()
 
-Classe Disciplina: é composta pelos atributos
+Classe Disciplina: 
+é composta pelos atributos
 • nome
 • carga horária
 • Array de até 30 alunos
 • Um professor
 Métodos:
 • Construtor com nome e carga horária
+---------------
 • Matricular um aluno (sobrecarregado)
 – parâmetro um objeto aluno
 – parâmetro nome completo, documento, data de nascimento, ra, senha e curso
+---------------
 • Atribuir professor
 • toString()
 • lista de assinatura:

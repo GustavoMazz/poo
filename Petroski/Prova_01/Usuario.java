@@ -7,7 +7,8 @@
 // 4. setUsername
 // 5. setPassword
 // 6. Getters
-// 7. toString
+// 7. Login
+// 8. toString
 
 //===================================================================
 
@@ -28,12 +29,7 @@ public class Usuario extends Pessoa {
     }
 
     public void setPassword(String password) {
-        if (password == this.password) {
-            this.password = password;
-            System.out.println("Logado com sucesso!");
-        }else{
-            System.out.println("Senha inválida!");
-        }
+        this.password = password;
     }
 
     public String getUsername() {
@@ -44,9 +40,18 @@ public class Usuario extends Pessoa {
         return password;
     }
 
-    public String toString(){
+    void login(String password) {
+        if (password == this.password) {
+            this.password = password;
+            System.out.println("Logado com sucesso!");
+        } else {
+            System.out.println("Senha inválida!");
+        }
+    }
+
+    public String toString() {
         String dados_user;
-        dados_user = super.toString()+"\nUsername: "+getUsername()+ "Senha: ******"; //+getSenha();
+        dados_user = super.toString() + "\nUsername: " + getUsername() + "Senha: ******"; // +getSenha();
         return dados_user;
     }
 }

@@ -1,3 +1,19 @@
+//================================================================
+
+// Sumário
+// 1. Classe Professor que extende a classe Usuário
+// 2. Construtor 
+// 3. setFormação
+// 4. setDepartamento
+// 5. Getters
+// 6. Editar
+//  6.1 Editar apenas a formação
+//  6.2 Editar formação e departamento
+// 7. Login
+// 8. toString 
+
+//===================================================================
+
 public class Professor extends Usuario {
     private String formacao;
     private String departamento;
@@ -45,7 +61,7 @@ public class Professor extends Usuario {
         this.formacao = formacao;
         this.departamento = departamento;
     }
-    public void setPassword(String password) {
+    void login(String password) {
         if (password == this.password) {
             this.password = password;
             System.out.println("Usuário logado no Professor Online");
