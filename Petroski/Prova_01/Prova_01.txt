@@ -27,8 +27,8 @@ Métodos:
 • login com senha como parâmetro (Apenas escreve uma mensagem "Usuário logado
 no sistema"ou "Senha incorreta")
 • toString();
-Classe Professor: estende a classe Usuário com os atributos adicionais:
 
+Classe Professor: estende a classe Usuário com os atributos adicionais:
 Trabalho Avaliativo – B01 1 de setembro de 2020
 • Formação: (’G’ = graduação, ’M’ = mestrado, ’D’ = Doutorado)
 • Departamento
@@ -41,6 +41,7 @@ Métodos:
 • Reescrever o método login. Caso a senha esteja correta exibir a mensagem "Usuário
 logado no Professor Online"
 • Reescrever o método toString()
+
 Classe Aluno: estende a classe Usuário com os atributos adicionais:
 • RA
 • curso
@@ -53,6 +54,7 @@ Métodos:
 • Reescrever o método login. Caso a senha esteja correta exibir a mensagem "Usuário
 logado no Acadêmico Online"
 • Reescrever o método toString()
+
 Classe Disciplina: é composta pelos atributos
 • nome
 • carga horária
@@ -65,9 +67,6 @@ Métodos:
 – parâmetro nome completo, documento, data de nascimento, ra, senha e curso
 • Atribuir professor
 • toString()
-
-POO Pag. 2 de 3
-
 Trabalho Avaliativo – B01 1 de setembro de 2020
 • lista de assinatura:
 – Imprime as informações da disciplina e uma lista com os nomes de cada aluno
