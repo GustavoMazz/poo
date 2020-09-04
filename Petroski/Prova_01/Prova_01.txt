@@ -67,11 +67,11 @@ Métodos:
 – parâmetro nome completo, documento, data de nascimento, ra, senha e curso
 • Atribuir professor
 • toString()
-Trabalho Avaliativo – B01 1 de setembro de 2020
 • lista de assinatura:
 – Imprime as informações da disciplina e uma lista com os nomes de cada aluno
 para assinatura de presença.
 – Somente deve ser impressos alunos cursando
+
 Classe Principal:
 • Crie um secretário da classe usuário e faça o login do secretário;
 • Crie uma disciplina da classe disciplina, configure seus atributos;

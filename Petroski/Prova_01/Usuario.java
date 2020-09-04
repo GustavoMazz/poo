@@ -12,11 +12,11 @@
 //===================================================================
 
 public class Usuario extends Pessoa {
-    private String username;
-    private String password;
+    protected String username;
+    protected String password;
 
     public Usuario(String nome, String doc, Data data_nasc, String username, String password) {
-        tsuper(nome, doc, data_nasc);
+        super(nome, doc, data_nasc);
         this.setUsername(username);
         this.setPassword(password);
     }
@@ -46,7 +46,7 @@ public class Usuario extends Pessoa {
 
     public String toString(){
         String dados_user;
-        dados_user = super.toString+"\nUsername: "+getUsername()+ "Senha: ******"; //+getSenha();
+        dados_user = super.toString()+"\nUsername: "+getUsername()+ "Senha: ******"; //+getSenha();
         return dados_user;
     }
 }

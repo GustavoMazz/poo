@@ -17,9 +17,9 @@
 //===================================================================
 
 public class Pessoa {
-    private String nome;
-    private String doc;
-    private Data data_nasc;
+    protected String nome;
+    protected String doc;
+    protected Data data_nasc;
 
     public Pessoa(String nome, String doc, Data data_nasc) {
         this.setNome(nome);
@@ -41,7 +41,7 @@ public class Pessoa {
     }
 
     public void setDoc(String doc) {
-        if (doc.length() == 9 || doc.lenght() == 11 && doc.matches("[0-9]*")){
+        if (doc.length() == 9 && doc.matches("[0-9]*")){ //|| doc.lenght() == 11
             this.doc = doc;
         }else{
             System.out.println("Documento invalido.");
@@ -56,7 +56,7 @@ public class Pessoa {
         return nome;
     }
 
-    public int getDoc() {
+    public String getDoc() {
         return doc;
     }
 
