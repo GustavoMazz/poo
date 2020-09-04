@@ -18,12 +18,12 @@ public class Disciplina {
     private String nome_disc;
     private int carga_hora;
     private Pessoa pessoa;
-    private ArrayList<Aluno> alunos = new ArrayList();
+    private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
     private ArrayList<Professor> professor = new ArrayList();
 
     public Disciplina(String nome_disc, int carga_hora, Pessoa pessoa) {
-        this.setNome_disc(nome_disc);
-        this.setCarga_hora(carga_hora);
+        setNome_disc(nome_disc);
+        setCarga_hora(carga_hora);
     }
 
     public void setNome_disc(String nome_disc) {
@@ -51,20 +51,23 @@ public class Disciplina {
     }
 
     public void addAluno(String nome, String doc, Data data_nasc, String RA, String password, String curso) {
-        if (this.nome != nome && this.doc != doc && this.RA != RA) {
-            alunos.add(aluno);
-        } else {
-            System.out.println("Aluno já existente.");
+        // iterar ArrayList
+        for (Aluno aluno : alunos) {
+            if (aluno.getNome() != nome) {
+                alunos.add(aluno);
+            } else {
+                System.out.println("Aluno já existente.");
+            }
         }
     }
 
-    public void setAlunos(ArrayList<Aluno> listaAlunos) {
-        this.alunos = listaAlunos;
-    }
+    // public void setAlunos(ArrayList<Aluno> listaAlunos) {
+    // this.alunos = listaAlunos;
+    // }
 
-    public void setProfessor(ArrayList<Professor> listaProfessor) {
-        this.professor = listaProfessor;
-    }
+    // public void setProfessor(ArrayList<Professor> listaProfessor) {
+    // this.professor = listaProfessor;
+    // }
 
     public ArrayList<Aluno> getListaAluno() {
         return alunos;
@@ -84,9 +87,10 @@ public class Disciplina {
 
     // Imprime as informações da disciplina e uma lista com os nomes de cada aluno
     // Somente deve ser impressos alunos cursando
-    // public void Assinaturas(){
-    // for(){
-    //
-    // }
-    // }
+    public void Assinaturas(String aluno) {
+        for (Aluno alunos : alunos) {
+                System.out.println(alunos);
+            }
+        }
+    
 }

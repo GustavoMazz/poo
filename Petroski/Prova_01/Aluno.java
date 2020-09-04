@@ -11,8 +11,8 @@
 //===================================================================
 
 public class Aluno extends Usuario{
-    private String RA;
-    private String curso;
+    protected String RA;
+    protected String curso;
 
     public Aluno(String RA, String curso, String username, String password, String nome, String doc, Data data_nasc){
         super(nome, doc, data_nasc,username = RA, password);
