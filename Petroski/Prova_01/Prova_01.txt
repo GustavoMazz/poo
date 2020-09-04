@@ -7,6 +7,7 @@ e professores.
 Métodos:
 • construtor
 • toString();
+
 Classe Pessoa: classe que contém os seguintes atributos:
 • nome completo;
 • documento (pode ser rg, cpf, etc);
@@ -16,6 +17,7 @@ Métodos:
 – um com os parâmetros nome completo, documento e data de nascimento
 – e outro com nome completo e data de nascimento
 • toString();
+
 Classe Usuário: classe que extende Pessoa com os atributos adicionais:
 • usuário (username);
 • senha
