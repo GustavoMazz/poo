@@ -70,6 +70,7 @@ Métodos:
 ---------------
 • Atribuir professor
 • toString()
+
 • lista de assinatura:
 – Imprime as informações da disciplina e uma lista com os nomes de cada aluno
 para assinatura de presença.

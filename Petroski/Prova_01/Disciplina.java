@@ -43,8 +43,8 @@ public class Disciplina {
     }
 
     public void AddAluno(Aluno alunos) {
-        if (alunos.size() <= 30) {
-            alunos.add(alunos);
+        if (this.alunos.size() <= 30) {
+            this.alunos.add(alunos);
         } else {
             System.out.println("Limite de alunos atingido.");
         }
@@ -75,19 +75,18 @@ public class Disciplina {
     }
 
     public void AddProfessor(Professor professor) {
-        if (professor.size() <= 1) {
-            professor.add(professor);
+        if (this.professor.size() <= 1) {
+            this.professor.add(professor);
         } else {
             System.out.println("Limite de professor atingido.");
         }
     }
-    
 
     // Imprime as informações da disciplina e uma lista com os nomes de cada aluno
     // Somente deve ser impressos alunos cursando
     // public void Assinaturas(){
-    //   for(){
+    // for(){
     //
-    //    }
+    // }
     // }
 }
