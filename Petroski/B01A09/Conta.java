@@ -1,10 +1,10 @@
 
 
 public class Conta {
-    private String nomeTitular;
-    private int agencia;
-    private int numero;
-    private double saldo;
+    protected String nomeTitular;
+    protected int agencia;
+    protected int numero;
+    protected double saldo;
 
     public Conta(
         String nomeTitular, int agencia, int numero
@@ -35,9 +35,9 @@ public class Conta {
         }
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
+    // public void setSaldo(double saldo) {
+    //     this.saldo = saldo;
+    // }
 
     public String getNomeTitular() {
         return nomeTitular;
@@ -72,7 +72,7 @@ public class Conta {
         if(valor >= 0 && valor > this.saldo){
             System.out.println("Saldo insuficiente.");
         }else{
-            System.out.println("Deposito cancelado. Verifique valor");
+            System.out.println("Saque cancelado. Verifique valor");
         }
     }
 

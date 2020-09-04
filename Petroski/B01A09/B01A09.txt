@@ -16,6 +16,7 @@ ser sempre inicializado com 0)
 – Método deposita (valor depositado não pode ser negativo)
 – Método sacar ( valor não pode ser negativo e deve ser menor ou igual ao saldo)
 – Método imprime extrato (Mostra em tela o extrato de saldo da conta)
+
 2. Desenvolva uma classe Conta corrente, que herde os atributos e métodos de Conta:
 • Atributos adicionais
 – privado limite (double)
@@ -29,24 +30,21 @@ da superclasse)
 
 3. Desenvolva uma classe Conta poupança, que herde os atributos e métodos de Conta:
 • Atributos adicionais
-– privado data de aniversário (String)
+– privado data de aniversário (String)-
+– privado porcentual de rendimento (double)-
 
-Aula prática B01A09 28 de agosto de 2020
-
-– privado porcentual de rendimento (double)
 • Métodos
-
 – Construtor com o nome do titular, agência, número e rendimento (usar o cons-
-trutor da superclasse)
-
+trutor da superclasse)-
 – gets e sets dos sequintes atributos:
-∗ data de aniversário
-∗ percentual de rendimento
-– Método adicionaRendimento (Adiciona o percentual de rendimento ao saldo)
-– Reescrever o método toString()
-– Reescrever o método deposita:
+∗ data de aniversário-
+∗ percentual de rendimento-
+
+– Método adicionaRendimento (Adiciona o percentual de rendimento ao saldo)-
+– Reescrever o método toString()-
+– Reescrever o método deposita:-
 ∗ Se a data de aniversário for vazia, setar com a data atual (para simplificar
-pode deixar uma data fixa como exemplo hoje "28/08/2020")
+pode deixar uma data fixa como exemplo hoje "28/08/2020")-
 
 4. Criar uma classe com um método main:
 • Criar uma conta corrente (Mostrar os dados da conta criada);
@@ -56,6 +54,7 @@ pode deixar uma data fixa como exemplo hoje "28/08/2020")
 • imprimir extrato do saldo
 • fazer outro saque de um valor que seja maior que saldo+limite
 • imprimir extrato do saldo
+
 • Criar uma conta poupança (Mostrar os dados da conta criada);
 • Fazer um depósito;
 • imprimir extrato do saldo
@@ -63,6 +62,7 @@ pode deixar uma data fixa como exemplo hoje "28/08/2020")
 • imprimir extrato do saldo
 • fazer outro depósito
 • imprimir extrato do saldo
+
 5. Desafio: Criar um método em conta chamado transfere, que recebe como parâmetro um
 valor e um destinatário do tipo conta
 1 public void transfere(double valor, Conta destinatario){
