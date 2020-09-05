@@ -14,7 +14,7 @@ public class ContaCorrente extends Conta{
 
     public String toString(){
         String dados_cc;
-        dados_cc = super.toString()+"\nPossui um limite de: "+getLimite();
+        dados_cc = super.toString()+"\nPossui um limite de: "+getLimite()+"\nSaldo: "+getSaldo();
         return dados_cc;
     }
     public void sacar(double valor, double limite){
