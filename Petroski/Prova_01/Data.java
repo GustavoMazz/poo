@@ -44,11 +44,11 @@ public class Data {
 
     // SETTERS
     public void setDia(int dia) {
-        if (dia >= 0 && dia <= 31 && this.mes != 2) {
+        if (dia >= 0 && dia < 31 && this.mes != 2) {
             this.dia = dia;
         }
         if (this.mes == 2) {
-            if (dia >= 0 && dia <= 28) {
+            if (dia >= 0 && dia < 28) {
                 this.dia = dia;
             } else {
                 System.out.println("Mês de feveiro possui apenas 28 dias");

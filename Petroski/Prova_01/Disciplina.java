@@ -42,6 +42,9 @@ public class Disciplina {
         return carga_hora;
     }
 
+    // • Matricular um aluno (sobrecarregado)
+    // – parâmetro um objeto aluno
+    // – parâmetro nome completo, documento, data de nascimento, ra, senha e curso
     public void AddAluno(Aluno alunos) {
         if (this.alunos.size() <= 30) {
             this.alunos.add(alunos);
@@ -85,12 +88,9 @@ public class Disciplina {
         }
     }
 
-    // Imprime as informações da disciplina e uma lista com os nomes de cada aluno
-    // Somente deve ser impressos alunos cursando
-    public void Assinaturas(String aluno) {
-        for (Aluno alunos : alunos) {
-                System.out.println(alunos);
-            }
+    public void Assinaturas() {
+        for (Aluno aluno : alunos) {
+            System.out.println(aluno);
         }
-    
+    }
 }
