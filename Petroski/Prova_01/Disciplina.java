@@ -45,12 +45,22 @@ public class Disciplina {
     // • Matricular um aluno (sobrecarregado)
     // – parâmetro um objeto aluno
     // – parâmetro nome completo, documento, data de nascimento, ra, senha e curso
-    public void AddAluno(Aluno alunos) {
-        if (this.alunos.size() <= 30) {
-            this.alunos.add(alunos);
-        } else {
+    public void AddAluno(Aluno new_aluno) {
+        // Verifica se já existem 30 alunos ou mais
+        if (this.alunos.size() >= 30) {
             System.out.println("Limite de alunos atingido.");
+            return; // Não deixa continuar se limite de alunos foi atingido
         }
+        
+        // Itera sobre os alunos, verifica se aluno já está cadastrado
+        for (Aluno aluno : alunos) {
+            if (aluno.getNome() == new_aluno.getNome()) {
+                System.out.println("Aluno já existente.");
+                return; // Não deixa continuar a função se aluno já está criado
+            } 
+        }
+        
+        this.alunos.add(alunos);
     }
 
     public void addAluno(String nome, String doc, Data data_nasc, String RA, String password, String curso) {
